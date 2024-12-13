@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.header {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.ITcourse {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.ITcourse:hover {
+    transform: scale(1.05);
+}
+
+.ITcourse img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid black;
+    border-radius: 8px 8px 0 0;
+}
+
+.ITcourse h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.ITcourse p {
+    font-size: 14px;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .ITcourse {
+        width: 45%;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .ITcourse {
+        width: 100%;
+    }
+    .header{
+        font-size: 27px;
+        font-weight: 700;
+        margin-top: -60px;
+
+
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="header">Top Featured Courses</div>
+        <div class="grid">
+            <div class="ITcourse">
+                <img src="https://via.placeholder.com/400x250" alt="Product Image">
+                <h3>User Research for User Experience Design</h3>
+                <p>The Museum of Modern Art</p>
+            </div>
+            <div class="ITcourse">
+                <img src="https://via.placeholder.com/400x250" alt="Product Image">
+                <h3>Buddhism and Modern Psychology</h3>
+                <p>The Museum of Modern Art</p>
+            </div>
+            <div class="ITcourse">
+                <img src="https://via.placeholder.com/400x250" alt="Product Image">
+                <h3>Introduction to Philosophy</h3>
+                <p>Duke University</p>
+            </div>
+            <div class="ITcourse">
+                <img src="https://via.placeholder.com/400x250" alt="Product Image">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Product description</p>
+            </div>
+            <div class="ITcourse">
+                <img src="https://via.placeholder.com/400x250" alt="Product Image">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Product description</p>
+            </div>
+            <div class="ITcourse">
+                <img src="https://via.placeholder.com/400x250" alt="Product Image">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Product description</p>
+            </div>
+        </div>
+    
+</body>
+</html>

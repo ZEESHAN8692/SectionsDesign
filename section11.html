@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Student Feedback</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.student-feedback {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.student-info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 540px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.student-details {
+    text-align: center;
+    margin-top: 10px;
+    padding-left: 100px ;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #F6F5F5;
+    margin-top: -50px;
+
+}
+
+.feedback-text {
+    flex: 2;
+}
+
+.feedback-text h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.feedback-text h2 span {
+    color: gold;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.feedback-text p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.courses {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.course {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.course img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .student-feedback {
+        flex-direction: column;
+    }
+
+    .feedback-text {
+        flex: 1;
+    }
+
+    .image-container img {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <section class="student-feedback">
+        <div class="student-info">
+            <div class="image-container">
+                <img src="https://via.placeholder.com/540x415" alt="Student Image">
+            </div>
+            <div class="student-details">
+                <h2>Kimmie Vo</h2>
+                <p>Junior Designer</p>
+            </div>
+        </div>
+        <div class="feedback-text">
+            <h2>Successful Student <span>Feedback</span></h2>
+            <p>Take courses from the world’s best instructors and universities. Courses include recorded auto-graded and peer-reviewed assignments, video lectures, and community discussion forums. When you complete a course, you’ll be eligible to receive a shareable electronic Course Certificate for a small fee.</p>
+            <h3>The courses that Kimmie has taken</h3>
+            <div class="courses">
+                <div class="course">
+                    <img src="https://via.placeholder.com/150" alt="Course Image">
+                    <p style="font-weight: 800; font-size: 20px;">Modern and Contemporary Art and Design</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Stats Section</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .stats-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 40px;
+            flex-wrap: wrap;
+            gap: 20px;
+            background-image: url(image/global.jpg);
+            background-size: cover;
+        }
+
+        .stat {
+            text-align: center;
+            flex: 1 1 200px;
+            max-width: 200px;
+        }
+
+        .stat img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .stat h2 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .stat p {
+            font-size: 18px;
+            color: #007bff;
+            font-weight: 700;
+        }
+
+        @media (max-width: 768px) {
+            .stats-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .stat {
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="stats-section">
+        <div class="stat">
+            <img src="https://via.placeholder.com/150" alt="Courses Published">
+            <h2>768</h2>
+            <p>COURSES PUBLISHED</p>
+        </div>
+        <div class="stat">
+            <img src="https://via.placeholder.com/150" alt="Expert Instructors">
+            <h2>120</h2>
+            <p>EXPERT INSTRUCTORS</p>
+        </div>
+        <div class="stat">
+            <img src="https://via.placeholder.com/150" alt="Happy Learners">
+            <h2>8300</h2>
+            <p>HAPPY LEARNERS</p>
+        </div>
+        <div class="stat">
+            <img src="https://via.placeholder.com/150" alt="Awards Achieved">
+            <h2>32</h2>
+            <p>AWARDS ACHIEVED</p>
+        </div>
+    </section>
+</body>
+
+</html>

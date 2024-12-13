@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .main-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 80%;
+            max-width: 1200px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .card-content h2 {
+            font-size: 1.5em;
+            margin: 0.5em 0;
+        }
+        .card-content p {
+            font-size: 1em;
+            color: #666;
+            margin: 0.5em 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-container">
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Person 1">
+        <div class="card-content">
+            <h2>John Doe</h2>
+            <p>John Doe is a software engineer with over 10 years of experience in full-stack development. He loves coding and is passionate about open source projects.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Person 2">
+        <div class="card-content">
+            <h2>Jane Smith</h2>
+            <p>Jane Smith is a project manager who excels at leading teams and delivering successful projects. She has a keen eye for detail and a passion for technology.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Person 3">
+        <div class="card-content">
+            <h2>Michael Johnson</h2>
+            <p>Michael Johnson is a UX designer with a knack for creating user-friendly interfaces. He believes in designing with empathy and putting the user first.</p>
+        </div>
+    </div>
+    
+</div>
+
+</body>
+</html>

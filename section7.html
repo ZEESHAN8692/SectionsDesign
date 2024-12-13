@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Single Product</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .main-container {
+            background-color: #FFFF80; /* Main container background color */
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .product {
+            display: flex;
+            flex-direction: row;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: left;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 800px; /* Adjust max width as needed */
+            width: 100%;
+        }
+        .product-info, .product-img {
+            flex: 1;
+            padding: 20px;
+        }
+        .product-img img {
+            width: 100%;
+            height: auto;
+        }
+        .product-name {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .product-description {
+            font-size: 16px;
+            color: #555;
+        }
+        .product-price {
+            color: #b12704;
+            font-size: 20px;
+            margin: 15px 0;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        .buy-now {
+            background-color: #FF0080;
+            color: white;
+        }
+        .add-to-cart {
+            background-color: #FF0080;
+            color: white;
+        }
+        .buttons button:hover {
+            opacity: 0.9;
+            border: 1px solid black;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+            }
+            .product-info, .product-img {
+                padding: 10px;
+            }
+            .product-name {
+                font-size: 20px;
+            }
+            .product-description {
+                font-size: 14px;
+            }
+            .product-price {
+                font-size: 18px;
+            }
+            .buttons button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-container">
+    <div class="product">
+        <div class="product-info">
+            <div class="product-name">Product 1</div>
+            <div class="product-description">This is a great product.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores modi in non quisquam. Cum, odit repudiandae similique fugiat id ut quam illo architecto enim sequi nemo accusantium tempore perferendis recusandae.
+            </div>
+            <div class="product-price">$19.99</div>
+            <div class="buttons">
+                <button class="buy-now">Buy Now</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-img">
+            <img src="https://via.placeholder.com/300" alt="Product 1">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

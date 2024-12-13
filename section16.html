@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .image-category {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        /* Adds space between the rows */
+        align-items: center;
+        /* Center the rows horizontally */
+    }
+    
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        /* Adds space between the images */
+        justify-content: center;
+        /* Center the images horizontally */
+    }
+    
+    .row img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        /* Ensures the images maintain their aspect ratio */
+    }
+    
+    
+    @media (max-width: 600px) {
+        .row {
+            justify-content: space-around;
+            /* Distribute images evenly */
+        }
+    
+        .Ca img {
+            width: 100%;
+            /* Make images take 45% of the container width */
+            height: auto;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="top-category">
+        <h1 style="text-align: center; font-weight: 700; font-size: 40px; color: #0c359e;">Top Category</h1>
+        <br>
+        <div class="image-category">
+            <!-- First row of 7 images -->
+            <div class="row">
+                <div class="CategoryImageSize"><a href="#"><img src="https://via.placeholder.com/150" alt="Image 1"></a></div>
+                <div class="CategoryImageSize"><a href="#"><img src="https://via.placeholder.com/150" alt="Image 2"></a></div>
+                <div class="CategoryImageSize"><a href="#"><img src="https://via.placeholder.com/150" alt="Image 3"></a></div>
+                <div class="CategoryImageSize"><a href="#"><img src="https://via.placeholder.com/150" alt="Image 4"></a></div>
+                <div class="CategoryImageSize"><a href="#"><img src="https://via.placeholder.com/150" alt="Image 5"></a></div>
+                <div class="CategoryImageSize"><a href="#"><img src="https://via.placeholder.com/150" alt="Image 6"></a></div>
+                <div class="CategoryImageSize"><a href="#"><img src="https://via.placeholder.com/150" alt="Image 7"></a></div>
+            </div>
+            <!-- Second row of 7 images -->
+            <div class="row">
+                <div class="CategoryImageSize"><a href="#"><img src="https://via.placeholder.com/150" alt="Image 8"></a></div>
+                <div class="CategoryImageSize"><a href="#"><img src="https://via.placeholder.com/150" alt="Image 9"></a></div>
+                <div class="CategoryImageSize"><a href="#"><img src="https://via.placeholder.com/150" alt="Image 10"></a></div>
+                <div class="CategoryImageSize"><a href="#"><img src="https://via.placeholder.com/150" alt="Image 11"></a></div>
+                <div class="CategoryImageSize"><a href="#"><img src="https://via.placeholder.com/150" alt="Image 12"></a></div>
+                <div class="CategoryImageSize"><a href="#"><img src="https://via.placeholder.com/150" alt="Image 13"></a></div>
+                <div class="CategoryImageSize"><a href="#"><img src="https://via.placeholder.com/150" alt="Image 14"></a></div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <!-- CategoryEnd  -->
+    
+</body>
+</html>

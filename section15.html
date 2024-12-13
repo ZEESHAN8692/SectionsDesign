@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuous Student Slider</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .slider-section {
+            text-align: center;
+            padding: 40px;
+            background-color: #ffffff;
+        }
+
+        .slider-section h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .slider-container {
+            position: relative;
+            overflow: hidden;
+            max-width: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .slider {
+            display: flex;
+            animation: slide 20s linear infinite;
+        }
+
+        .slide {
+            min-width: 150px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin: 0 10px;
+            text-align: center;
+        }
+
+        .slide img {
+            width: 150px;
+            height: 150px;
+            border-radius: 8px;
+        }
+
+        .slide p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #007bff;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-150px * 6)); /* Adjust this value based on the number of slides */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .slide img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .slide p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="slider-section">
+        <h2>Our Top Students</h2>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide"><img src="https://via.placeholder.com/150" alt="Student 1"><p>Student 1</p></div>
+                <div class="slide"><img src="https://via.placeholder.com/150" alt="Student 2"><p>Student 2</p></div>
+                <div class="slide"><img src="https://via.placeholder.com/150" alt="Student 3"><p>Student 3</p></div>
+                <div class="slide"><img src="https://via.placeholder.com/150" alt="Student 4"><p>Student 4</p></div>
+                <div class="slide"><img src="https://via.placeholder.com/150" alt="Student 5"><p>Student 5</p></div>
+                <div class="slide"><img src="https://via.placeholder.com/150" alt="Student 6"><p>Student 6</p></div>
+                <!-- Cloned slides for continuous effect -->
+                <div class="slide"><img src="https://via.placeholder.com/150" alt="Student 1"><p>Student 1</p></div>
+                <div class="slide"><img src="https://via.placeholder.com/150" alt="Student 2"><p>Student 2</p></div>
+                <div class="slide"><img src="https://via.placeholder.com/150" alt="Student 3"><p>Student 3</p></div>
+                <div class="slide"><img src="https://via.placeholder.com/150" alt="Student 4"><p>Student 4</p></div>
+                <div class="slide"><img src="https://via.placeholder.com/150" alt="Student 5"><p>Student 5</p></div>
+                <div class="slide"><img src="https://via.placeholder.com/150" alt="Student 6"><p>Student 6</p></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
